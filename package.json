@@ -2,13 +2,20 @@
   "name": "chad_site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Chad1704.github.io/chad_site",
   "scripts": {
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+
+
     "dev": "vite",
-    "build": "next build",
+    
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out -b gh-pages"
+    "preview": "vite preview",
+    "export": "next export"
+    
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
